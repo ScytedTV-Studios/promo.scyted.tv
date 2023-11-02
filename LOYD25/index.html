@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sponsor Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .sponsor-profile img {
+            max-width: 15%;
+            border: 5px solid #FFEA00;
+            border-radius: 50%;
+        }
+
+        .message {
+            margin-top: 20px;
+        }
+
+        .redirect-link {
+            color: #FFEA00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sponsor-profile">
+            <img src="profile-picture.jpg" alt="Profile Picture">
+        </div>
+        <h1>25% OFF Annual Subscription</h1>
+        <div class="message">
+            <p>Thank to <strong>Loyd Osborne</strong> for allowing us to sponsor them. You will be redirected shortly.<br>
+            <em>If you are not redirected, please click <a class="redirect-link" href="https://www.your-redirect-link.com">here</a>.</em></p>
+        </div>
+    </div>
+
+    <script>
+        setTimeout(function() {
+            window.location.href = "https://www.your-redirect-link.com";
+        }, 5000);
+    </script>
+</body>
+</html>
